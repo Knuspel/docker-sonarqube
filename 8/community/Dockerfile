@@ -87,7 +87,7 @@ RUN set -eux; \
 # SonarQube setup
 #
 ARG SONARQUBE_VERSION=8.7.1.42226
-ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-${SONARQUBE_VERSION}.zip
+ARG SONARQUBE_ZIP_URL=https://github.com/Knuspel/sonarqube/releases/download/8.0.8-Snapshot/sonar-application-8.8-SNAPSHOT.zip
 ENV JAVA_HOME=/opt/java/openjdk \
     PATH="/opt/java/openjdk/bin:$PATH" \
     SONARQUBE_HOME=/opt/sonarqube \
